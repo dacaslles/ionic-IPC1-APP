@@ -12,11 +12,11 @@
   <ion-card *ngFor="let lesson of lessonItems">
 
     <ion-item>
-      <ion-avatar item-start>
+      <!--<ion-avatar item-start>
         <img [src]="lesson.user.avatar">
-      </ion-avatar>
-      <h2>{{lesson.user.name}}</h2>
-      <p>{{lesson.date}}</p>
+      </ion-avatar>-->
+      <h2>{{lesson.name}}</h2>
+      <!--<p>{{lesson.date}}</p>-->
     </ion-item>
 
     <img [src]="lesson.image">
@@ -26,23 +26,23 @@
     </ion-card-content>
 
     <ion-row>
-      <ion-col>
+      <!--<ion-col>
         <button ion-button color="primary" clear small icon-start>
             <ion-icon name='thumbs-up'></ion-icon>
             12 Likes
           </button>
-      </ion-col>
+      </ion-col>-->
       <ion-col>
         <button ion-button color="primary" clear small icon-start>
-            <ion-icon name='text'></ion-icon>
-            4 Comments
+            Ir a leccion 
+            <ion-icon name='arrow-round-forward'></ion-icon>
           </button>
       </ion-col>
-      <ion-col center text-center>
+      <!--<ion-col center text-center>
         <ion-note>
           11h ago
         </ion-note>
-      </ion-col>
+      </ion-col>-->
     </ion-row>
   </ion-card>
 </ion-content>
